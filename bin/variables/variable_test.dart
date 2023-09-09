@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 void main() {
   /* Non Type Safty variable */
   var name = "Md Eusuf Uddin";
@@ -13,7 +11,9 @@ void main() {
       "\n" +
       "Profession: ${profession}" +
       "\n" +
-      "Salary${salary}");
+      "Salary: ${salary}");
+
+  print("\n");
 
 /*Type Safty variable */
   String tName = "Md Shohag Uddin";
@@ -27,5 +27,5 @@ void main() {
       "\n" +
       "Profession: ${tProfession}" +
       "\n" +
-      "Salary${salary}");
+      "Salary: ${tSalary}");
 }

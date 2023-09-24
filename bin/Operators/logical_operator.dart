@@ -5,9 +5,9 @@ void main() {
   var val1 = bool_is_student && bool_isEmployee;
   print(val1);
 
-  var val2 = bool_is_student || bool_isEmployee;
+  var val2 = bool_is_student;
   print(val2);
 
-  var val3 = !(bool_is_student || bool_isEmployee);
+  var val3 = !(bool_is_student);
   print(val3);
 }

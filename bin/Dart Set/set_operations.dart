@@ -1,7 +1,6 @@
 void main() {
   var firstSet = <int>{10, 11, 12, 13, 14, 15};
   var secondSet = <int>{12, 13, 14, 15};
-  var thirdSet = <int>{2, 5, 10, 11};
 
   print("Example - Set Operations");
 

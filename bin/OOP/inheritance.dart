@@ -1,7 +1,12 @@
 void main() {
+  // single level inheritance
   var sonObj = new Son();
   sonObj.infomation();
   sonObj.schoolInfo();
+
+  // multilevel inheritance
+  var teacherObj = new Teacher();
+  teacherObj.teacherInfo();
 }
 
 class parent {
@@ -32,5 +37,12 @@ class Son extends parent {
     print("Session: ${session}");
     print("Result: ${result}");
     print("ResigtrationNo: ${resigtrationNo}");
+  }
+}
+
+class Teacher extends Son {
+  var teacherName = "Md Saidul Islam";
+  void teacherInfo() {
+    print("Teacher: ${teacherName}");
   }
 }

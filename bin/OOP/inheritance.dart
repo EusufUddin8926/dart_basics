@@ -1,12 +1,21 @@
 void main() {
-  // single level inheritance
-  var sonObj = new Son();
-  sonObj.infomation();
-  sonObj.schoolInfo();
+  // // single level inheritance
+  // var sonObj = new Son();
+  // sonObj.infomation();
+  // sonObj.schoolInfo();
 
   // multilevel inheritance
   var teacherObj = new Teacher();
   teacherObj.teacherInfo();
+  teacherObj.infomation();
+  teacherObj.schoolInfo();
+
+  // Hierarchical
+
+  var schoolInfoObj = new school();
+  var boardInfoObj = new Board();
+  schoolInfoObj.schoolInfo();
+  boardInfoObj.boardInfo("Rajshahi");
 }
 
 class parent {
@@ -44,5 +53,18 @@ class Teacher extends Son {
   var teacherName = "Md Saidul Islam";
   void teacherInfo() {
     print("Teacher: ${teacherName}");
+  }
+}
+
+class school extends Teacher {
+  var schoolName = "R&D high school";
+  void schoolInfo() {
+    print("School Name: ${schoolName}");
+  }
+}
+
+class Board extends Teacher {
+  void boardInfo(String boardifo) {
+    print("Board Info: ${boardifo}");
   }
 }

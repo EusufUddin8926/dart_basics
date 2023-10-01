@@ -15,6 +15,6 @@ class Child extends Parent {
   }
 
   display() {
-    print("this is default method from child class");
+    print("this is default method from child");
   }
 }

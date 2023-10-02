@@ -3,11 +3,15 @@ void main() {
   Student studentObj = new Student();
 
   teacherObj.info();
+  teacherObj.nonAbstrct();
   studentObj.info();
 }
 
 abstract class Human {
   void info();
+  void nonAbstrct() {
+    print("This is non abstract method");
+  }
 }
 
 class Teacher extends Human {

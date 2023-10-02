@@ -1,9 +1,9 @@
 void main() {
   Teacher teacherObj = new Teacher();
   teacherObj.setTeacher_Name = "Md Saidul Islam";
-  teacherObj.desination = "Lecturer(Mathematics)";
+  teacherObj.setDesination = "Lecturer(Mathematics)";
   teacherObj.setYearOf_Experience = 15;
-  teacherObj.experienceArea = "Linear Algebra";
+  teacherObj.setExperience_Area = "Linear Algebra";
 
   print("Name: ${teacherObj.getTeacher_Name}");
   print("Designation: ${teacherObj.getDesination}");

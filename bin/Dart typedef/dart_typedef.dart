@@ -1,17 +1,19 @@
-typedef MultiOperation(int num1, int num2); // typedef function signature
-Sum(int n1, int n2) {
-  print("Sum of the two number:${n1 + n2}");
-}
-
-Sub(int n1, int n2) {
-  print("Subtraction of the two number:${n1 - n2}");
-}
-
 void main() {
-  MultiOperation mp = Sum;
-  print("JavaTpoint - Dart typedef Example");
+  multiOperation operation = sum;
 
-  mp(20, 10);
-  mp = Sub;
-  mp(30, 20);
+  operation(10, 20);
+  operation = sub;
+  operation(20, 10);
 }
+
+void sum(int a, int b) {
+  int res = a + b;
+  print("The sum of two number is ${res}");
+}
+
+void sub(int a, int b) {
+  int res = a - b;
+  print("The sub of two number is ${res}");
+}
+
+typedef multiOperation(int a, int b);

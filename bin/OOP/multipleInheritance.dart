@@ -32,11 +32,11 @@ class Department implements Science, Humantics {
 
   @override
   void displaySubjectNameHumanitics() {
-    print("My subject name is ${scienceSubjectName}");
+    print("My subject name is ${artssSubjectName}");
   }
 
   @override
   void displaySubjectNameScience() {
-    print("Imrul subject name is ${artssSubjectName}");
+    print("Imrul subject name is ${scienceSubjectName}");
   }
 }

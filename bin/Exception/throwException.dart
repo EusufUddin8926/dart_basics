@@ -1,6 +1,6 @@
 void main() {
   try {
-    checkNumber(-19);
+    checkNumber(-1);
   } catch (ex) {
     print("Number can not be negative.");
   }

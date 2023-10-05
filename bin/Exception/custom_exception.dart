@@ -5,22 +5,17 @@ class Age implements Exception {
 }
 
 void main() {
-  int geek_age1 = 20;
-  int geek_age2 = 10;
+  int age1 = 20;
+  int age2 = 10;
 
   try {
-    // Checking Age and
-    // calling if the
-    // exception occur
-    check(geek_age1);
-    check(geek_age2);
+    check(age1);
+    check(age2);
   } catch (e) {
-    // Printing error
     print(e.error());
   }
 }
 
-// Checking Age
 void check(int age) {
   if (age < 18) {
     throw new Age();
